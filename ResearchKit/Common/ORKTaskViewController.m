@@ -1052,7 +1052,7 @@ static NSString *const _ChildNavigationControllerRestorationKey = @"childNavigat
     }
     
     ORKWeakTypeOf(self) weakSelf = self;
-    [self.pageViewController setViewControllers:@[viewController] direction:direction animated:animated completion:^(BOOL finished) {
+    [self.pageViewController setViewControllers:@[viewController] direction:direction animated:false completion:^(BOOL finished) {
         
         if (weakSelf == nil) {
             ORK_Log_Debug(@"Task VC has been dismissed, skipping block code");

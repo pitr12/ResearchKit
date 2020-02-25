@@ -278,7 +278,7 @@ typedef NS_ENUM(NSInteger, ORKPageNavigationDirection) {
     // unregister ScrollView to clear hairline
     [self.taskViewController setRegisteredScrollView:nil];
     
-    [self.pageViewController setViewControllers:@[stepViewController] direction:direction animated:animated completion:^(BOOL finished) {
+    [self.pageViewController setViewControllers:@[stepViewController] direction:direction animated:false completion:^(BOOL finished) {
         if (finished) {
             ORKStrongTypeOf(weakSelf) strongSelf = weakSelf;
             [strongSelf updateNavLeftBarButtonItem];

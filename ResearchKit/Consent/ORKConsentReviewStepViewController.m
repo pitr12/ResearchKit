@@ -384,7 +384,7 @@ static NSString *const _SignatureStepIdentifier = @"signatureStep";
     //unregister ScrollView to clear hairline
     [self.taskViewController setRegisteredScrollView:nil];
     
-    [_pageViewController setViewControllers:@[viewController] direction:direction animated:animated completion:^(BOOL finished) {
+    [_pageViewController setViewControllers:@[viewController] direction:direction animated:false completion:^(BOOL finished) {
         if (finished) {
             ORKStrongTypeOf(weakSelf) strongSelf = weakSelf;
             [strongSelf updateBackButton];

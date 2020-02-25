@@ -459,7 +459,7 @@
     }
     
     ORKWeakTypeOf(self) weakSelf = self;
-    [self.pageViewController setViewControllers:@[viewController] direction:direction animated:animated completion:^(BOOL finished) {
+    [self.pageViewController setViewControllers:@[viewController] direction:direction animated:false completion:^(BOOL finished) {
         ORKStrongTypeOf(self) strongSelf = weakSelf;
         pageViewControllerView.userInteractionEnabled = YES;
         [strongSelf updatePageIndex];
