@@ -319,7 +319,7 @@ static const CGFloat shadowHeight = 0.75;
             [_parentStackView addArrangedSubview:subStack];
         }
     }
-    _appTintColor = [[UIApplication sharedApplication].delegate window].tintColor;
+    _appTintColor = self.window.tintColor ? : ORKColor(ORKBlueHighlightColorKey);
     [self setupContinueButton];
     [self setupCancelButton];
     [self setupSkipButton];
