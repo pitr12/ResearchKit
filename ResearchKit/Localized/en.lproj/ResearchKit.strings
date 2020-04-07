@@ -32,6 +32,7 @@
 "CONSENT_NAME_TITLE" = "Consent";
 "CONSENT_NAME_GIVEN" = "First Name";
 "CONSENT_NAME_FAMILY" = "Last Name";
+"CONSENT_NAME_SECTION_TITLE"= "First and Last Name"
 "CONSENT_NAME_PLACEHOLDER" = "Required";
 "CONSENT_REVIEW_TITLE" = "Review";
 "CONSENT_REVIEW_INSTRUCTION" = "Review the form below, and tap Agree if you’re ready to continue.";
